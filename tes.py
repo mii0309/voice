@@ -1,3 +1,4 @@
+import pyaudio
 import numpy as np
 from time import sleep
 
@@ -37,7 +38,6 @@ print("play")
 for i in range(replay):
     play_wave(stream, tone(f, L1, 1.0)) 
     sleep(1)
-plt.plot(stream,tone(f, L1, 1.0))
-plt.show()
+
 
 stream.close()
